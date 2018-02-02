@@ -16,6 +16,8 @@ public class SmpOutputWriterImplTest {
 
     private PrintStream stream;
 
+
+    // I don't understand what the test should be because there is only on method call from a safe class
     public SmpOutputWriterImplTest(){
         stream = Mockito.mock(PrintStream.class);
        doNothing().when(stream).println(anyString());
@@ -34,6 +36,7 @@ public class SmpOutputWriterImplTest {
     //TODO
     @Test
     public void testPrintNull() throws Exception {
+
     }
 
 }
