@@ -11,4 +11,9 @@ public abstract class AbstractSmpInputValidator implements SmpInputValidator {
     public AbstractSmpInputValidator(final Locale locale) {
         this.locale = locale;
     }
+
+    @Override
+    public Locale getLocale() {
+        return locale;
+    }
 }
